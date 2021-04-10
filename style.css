@@ -273,6 +273,9 @@ body {
 }
 
 @media(max-width: 1250px){
+    #score {
+        font-size: 2.2em;
+    }
     .btn {
         width: 25vw;
         height: 25vw;
@@ -284,5 +287,6 @@ body {
     }
     .rounds{
         width: 90%;
+        font-size: 1.4em;
     }
 }
