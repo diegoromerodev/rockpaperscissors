@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
         <title>Rock, Paper, Scissors</title>
     </head>
     <body>
+        <div id="first-move">
+            <div class="content">
+                <h3>Rock, Paper, Scissors!</h3>
+                <p>A fun project by Diego R.</p>
+                <p class="small"><em>Click on any icon to begin!</em></p>
+            </div>
+        </div>
+        <main id="home">
+            <div id="winner-container" class="disable">
+                <div class="dialog-content">
+                    <h3></h3>
+                    <p></p>
+                    <a class="exit-btn">NEW GAME</a>
+                </div>
+            </div>
+            <div id="score">
+                <p class="playerScore score">YOU: 0</p>
+                <p class="computerScore score">PC: 0</p>
+            </div>
+            <div id="choices">
+                <button id="rock" data-move="rock" class="btn"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/comet_2604-fe0f.png"
+                    alt="Rock"></button>
+                <button id="paper" data-move="paper" class="btn"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/memo_1f4dd.png"
+                    alt="Paper"></button>
+                <button id="scissors" data-move="scissors" class="btn"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/scissors_2702-fe0f.png"
+                    alt="Scissors"></button>
+            </div>
+            <div class="rounds">
+            </div>
+        </main>
         <script src="app.js"></script>
     </body>
 </html>
