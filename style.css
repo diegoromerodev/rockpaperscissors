@@ -78,12 +78,15 @@ body {
 /* SCORE STYLING */
 #score {
     display: flex;
-    margin-right: 10px;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin: 1rem 0;
     font-weight: bold;
+}
+
+#score p {
+    margin-left: 15px;
 }
 
 #score .winning {
@@ -95,7 +98,7 @@ body {
     border: none;
     background: var(--light-blue);
     border-radius: 50%;
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
     outline: none;
     cursor: pointer;
     opacity: 0.3;
@@ -170,12 +173,12 @@ body {
 .round-images {
     display: flex;
     align-items: center;
-    margin-right: 5px;
 }
 
 
 .round-images img {
     width: 2.2em;
+    margin: 0 6px;
 }
 
 .round-images img:nth-child(2) {
@@ -211,8 +214,11 @@ body {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
     box-shadow: 0 0 20px var(--dark-main);
+}
+
+.dialog-content > * {
+    margin: 10px 5px;
 }
 
 .dialog-content.player-wins {
@@ -222,6 +228,7 @@ body {
 
 .dialog-content h3 {
     font-size: 2rem;
+    margin-bottom: -5px;
 }
 
 .disable {
@@ -265,10 +272,15 @@ body {
     border-radius: 10px;
 }
 
-@media(max-width: 1100px){
+@media(max-width: 1250px){
     .btn {
-        width: 5em;
-        height: 5em;
+        width: 25vw;
+        height: 25vw;
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+    }
+    .btn img {
+        width: 16vw;
     }
     .rounds{
         width: 90%;
