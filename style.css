@@ -275,6 +275,11 @@ body {
 @media(max-width: 1250px){
     #score {
         font-size: 2.2em;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #score p {
+        margin: 0;
     }
     .btn {
         width: 25vw;
